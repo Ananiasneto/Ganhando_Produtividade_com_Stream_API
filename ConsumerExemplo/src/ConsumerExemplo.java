@@ -10,7 +10,9 @@ public class ConsumerExemplo {
             if (numero%2==0){
                 system.out.println(numero);
             }
-        }
-        numeros.stream().forEach(imprimirNumeroPar);
+        };
+        numeros.stream()
+        .filter(n-> n % 2 == 0)
+        .forEach(system.out::println);
     }
 }
